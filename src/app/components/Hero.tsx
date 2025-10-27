@@ -6,7 +6,7 @@ import { Button } from "./Button";
 const Hero = () => {
   return (
     <div className="hero-container">
-      <video src="/videos/video1.mp4" autoPlay loop muted />
+      <video src="/videos/video1.mp4" autoPlay loop muted playsInline />
       <h1>Precision. Integrity. Shine.</h1>
       <p>Cleaning solutions designed for businesses and homes.</p>
       <div className="hero-btns">
