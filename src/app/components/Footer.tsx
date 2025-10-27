@@ -78,7 +78,7 @@ const Footer = () => {
               target="_blank"
               aria-label="Youtube"
             >
-              <i className="fab fa-youtube" />
+              <i className="fab fa-facebook" />
             </Link>
             <Link
               className="social-icon-link twitter"
@@ -86,17 +86,8 @@ const Footer = () => {
               target="_blank"
               aria-label="Twitter"
             >
-              <i className="fab fa-twitter" />
+              <i className="fa-brands fa-x-twitter" />
             </Link>
-            <Link
-              className="social-icon-link twitter"
-              href="/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i className="fab fa-linkedin" />
-            </Link>
-            <small className="website-rights">Lustra Cleaning © 2025</small>
           </div>
         </div>
       </section>
