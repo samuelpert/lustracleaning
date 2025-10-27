@@ -53,16 +53,37 @@ const Footer = () => {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link href="/" className="social-logo">
-              <Image
-                src="/logo_white.png"
-                alt="Lustra Cleaning"
-                width={90}
-                height={90}
-              />
-            </Link>
-            <span className="website-rights">Lustra Cleaning© LLC 2025</span>
+          <div
+            className="center"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "100%",
+              gap: "16px",
+            }}
+          >
+            <div style={{ flex: "0 0 auto" }}>
+              <Link href="/" className="social-logo">
+                <Image
+                  src="/logo_white.png"
+                  alt="Lustra Cleaning"
+                  width={90}
+                  height={90}
+                />
+              </Link>
+            </div>
+            <span
+              className="website-rights"
+              style={{
+                marginLeft: "16px",
+                flex: "1 1 auto",
+                textAlign: "left",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Lustra Cleaning© LLC 2025
+            </span>
           </div>
           <div className="social-icons">
             <Link
