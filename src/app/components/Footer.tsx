@@ -62,6 +62,7 @@ const Footer = () => {
                 height={90}
               />
             </Link>
+            <span className="website-rights">Lustra Cleaning© LLC 2025</span>
           </div>
           <div className="social-icons">
             <Link
