@@ -107,7 +107,6 @@
 .nav-links:hover {
   color: var(--gold);
   border-bottom: 3px solid var(--gold);
-  transition: all 0.2s ease-out;
 }
 
 .fa-bars {
@@ -123,6 +122,17 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+  }
+
   .NavbarItems {
     position: relative;
   }
@@ -131,12 +141,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 30vh;
     position: absolute;
     top: 80px;
     left: -100%;
-    opacity: 1;
+    opacity: 0.5;
     transition: all 0.5s ease;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-menu.active {
@@ -145,14 +157,24 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-item {
+    height: auto;
+    padding: 0;
+    margin: 0;
   }
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
+    padding: 1.5rem 3rem;
+    width: 200px;
+    display: block;
     color: var(--white);
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .nav-links:hover {
@@ -163,18 +185,11 @@
   }
 
   .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    position: relative;
   }
 
   .menu-icon {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -583,7 +598,6 @@ h1 {
 
 .footer-link-items a:hover {
   color: var(--gold);
-  transition: 0.3s ease-out;
 }
 
 .footer-email-form h2 {
