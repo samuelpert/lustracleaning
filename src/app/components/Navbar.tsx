@@ -62,7 +62,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
-                href="/products"
+                href="/contact"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
