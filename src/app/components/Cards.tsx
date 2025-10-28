@@ -23,7 +23,7 @@ const Cards: React.FC = () => {
             <CardItem
               src="/image-3.jpg"
               text="Professional cleaning for offices, retail, and other businesses"
-              label="Comercial"
+              label="Commercial"
               path="/services"
             />
           </ul>
