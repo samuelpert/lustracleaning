@@ -1005,3 +1005,352 @@ h1 {
     font-size: 1.75rem;
   }
 }
+
+/* ============================================ */
+/* SERVICES PAGE STYLES - Enhanced Services */
+/* ============================================ */
+
+.services-page {
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(135deg, var(--beige) 0%, var(--white) 100%);
+  padding: 2rem 0 4rem;
+}
+
+.services-header {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-header h1 {
+  color: var(--navy-blue);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.services-header p {
+  color: var(--steel-blue);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Service Tabs Container */
+.service-tabs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Tab Buttons */
+.service-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.service-tab {
+  background: var(--white);
+  color: var(--navy-blue);
+  border: 2px solid var(--beige);
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 2px 10px rgba(31, 60, 99, 0.05);
+}
+
+.service-tab i {
+  font-size: 1.3rem;
+}
+
+.service-tab:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(214, 167, 78, 0.2);
+}
+
+.service-tab.active {
+  background: var(--gold);
+  color: var(--dark-navy);
+  border-color: var(--gold);
+  box-shadow: 0 5px 20px rgba(214, 167, 78, 0.3);
+}
+
+/* Service Content */
+.service-content {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(31, 60, 99, 0.1);
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+}
+
+/* Service Details Column */
+.service-details h2 {
+  color: var(--navy-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: var(--steel-blue);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.service-details h3 {
+  color: var(--navy-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.service-features li {
+  color: var(--steel-blue);
+  font-size: 1.05rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--beige);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-features li:hover {
+  background: rgba(214, 167, 78, 0.2);
+  transform: translateX(5px);
+}
+
+.service-features li i {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.service-additional-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(31, 60, 99, 0.05) 0%, rgba(214, 167, 78, 0.05) 100%);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.service-additional-info i {
+  color: var(--gold);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.service-additional-info p {
+  color: var(--steel-blue);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Pricing Column */
+.service-pricing {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.pricing-card {
+  background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-navy) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(31, 60, 99, 0.2);
+}
+
+.pricing-card h3 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.pricing-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  gap: 1rem;
+}
+
+.pricing-item:hover {
+  background: rgba(214, 167, 78, 0.2);
+  transform: scale(1.02);
+}
+
+.pricing-service {
+  color: var(--beige);
+  font-size: 0.95rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.pricing-price {
+  color: var(--gold);
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Pricing CTA */
+.pricing-cta {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(214, 167, 78, 0.3);
+}
+
+.pricing-cta p {
+  color: var(--beige);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--dark-navy);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(214, 167, 78, 0.3);
+}
+
+.pricing-btn:hover {
+  background: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(214, 167, 78, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .service-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-pricing {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-header p {
+    font-size: 1rem;
+  }
+
+  .service-tabs {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .service-tab {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .service-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .service-details h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .pricing-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .pricing-price {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-page {
+    padding: 1rem 0 3rem;
+  }
+
+  .services-header {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .service-tabs-container {
+    padding: 0 1rem;
+  }
+
+  .service-content {
+    padding: 1.5rem 1rem;
+  }
+}
